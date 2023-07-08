@@ -65,10 +65,13 @@ public class MyController {
 	public ResponseEntity<HttpStatus> deleteCourse(@PathVariable Long courseId) {
 		try {
 			this.courseService.deleteCourse(courseId);
+//			added for testing of commit
 			return new ResponseEntity<>(HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+	
+	
 
 }

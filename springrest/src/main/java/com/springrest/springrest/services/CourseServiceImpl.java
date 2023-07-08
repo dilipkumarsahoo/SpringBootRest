@@ -61,6 +61,8 @@ public class CourseServiceImpl implements CourseService {
 	@Override
 	public void deleteCourse(Long parseLong) {
 		courseDao.deleteById(parseLong);
+		
+//		added for testing of commit
 	//		list=this.list.stream().filter(e->e.getId()!=parseLong).collect(Collectors.toList());
 	}
 
